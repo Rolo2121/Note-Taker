@@ -37,6 +37,11 @@ app.post('/api/notes', function (req, res,) {
 });
 
 
+
+app.get('/', (req, res) => {
+    res.json('welcome to my app')
+  })
+  
 app.listen(PORT, function() {
     console.log('App listing on PORT ' + PORT);
 });
