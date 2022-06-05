@@ -14,7 +14,11 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static('./develop/public'));
+app.use(express.static('public'));
+
+// app.get('/', function (req, res) {
+//     res.sendFile(path.join(__dirname, './develop/public/index.html'));
+// });
 
 app.get('/api/notes', function (req, res) {
     readFileAsync('./develope/db/db.json', 'utf8').then(function(data) {
@@ -36,12 +40,18 @@ app.post('/api/notes', function (req, res,) {
     })
 });
 
+app.get('/notes', function(req, res) {
+    res.sendFile(path.join(__dirname, './develop/public/notes.html'));  
+});
 
+app.get('/', function(req, res)  {
+    res.sendFile(path.join(__dirname, './develop/public/index.html'));
+  });
 
-app.get('/', (req, res) => {
-    res.json('welcome to my app')
-  })
-  
+  app.get('*', function(req, res) {
+      res.sendFile(path.join(__dirname, './develop/public/index.html'));
+  });
+
 app.listen(PORT, function() {
     console.log('App listing on PORT ' + PORT);
 });
