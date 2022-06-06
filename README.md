@@ -6,11 +6,16 @@
 - Easier than writing it down only to realize you forgot your list at home.
 
     ```md
-    ![alt text](assets/images/screenshot.png1)
+    ![picture](./public/assets/images/screenshot.png1.png)
     ```
      ```md
-    ![alt text](assets/images/screenshot.png2)
+    ![alt text](./public/assets/images/screenshot.png2.png)
     ```
      ```md
-    ![alt text](assets/images/screenshot.png3)
+    ![alt text](./public/assets/images/screenshot.png3.png)
     ```
+
+    ## Frontend and file setups done by:
+
+    ## nol166 John McCambridge
+    ## Xandromus Xander Rapstine
