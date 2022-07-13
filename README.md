@@ -13,8 +13,7 @@
 
 <img width="1440" alt="screenshot png3" src="https://user-images.githubusercontent.com/100535724/178654839-300348d4-ede5-4cf5-b4a6-d49113e0dda8.png">
 
+## Frontend and file setups done by:
 
-    ## Frontend and file setups done by:
-
-    ## nol166 John McCambridge
-    ## Xandromus Xander Rapstine
+## nol166 John McCambridge
+## Xandromus Xander Rapstine
